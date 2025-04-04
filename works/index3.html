@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: #007bff;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 280px;
+            max-width: 320px;
+            margin: 10px;
+            padding: 20px;
+            background: white;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Discover amazing features and benefits designed for you</p>
+        <button onclick="alert('Sign Up!')">Sign Up Now</button>
+    </header>
+
+    <!-- Responsive Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h3>Fast & Reliable</h3>
+            <p>Experience seamless and dependable services anytime, anywhere.</p>
+        </div>
+        <div class="feature">
+            <h3>24/7 Support</h3>
+            <p>Our customer support team is always ready to assist you.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure Transactions</h3>
+            <p>We prioritize your security with top-notch encryption methods.</p>
+        </div>
+    </section>
+
+    <!-- Footer with Contact Information -->
+    <footer class="footer">
+        <p>Contact us: example@email.com | +123 456 789</p>
+        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+        <p>&copy; 2025 Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
