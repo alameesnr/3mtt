@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: #007bff;
+            color: white;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background: #f8f9fa;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Discover amazing features and services</p>
+        <button onclick="alert('Sign Up!')">Sign Up Now</button>
+    </header>
+
+    <!-- Responsive Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h3>Feature 1</h3>
+            <p>Short description of the feature.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 2</h3>
+            <p>Short description of the feature.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 3</h3>
+            <p>Short description of the feature.</p>
+        </div>
+    </section>
+
+    <!-- Footer with Contact Information -->
+    <footer class="footer">
+        <p>Contact us: example@email.com | +123 456 789</p>
+        <p>Follow us on <a href="#" style="color: lightblue;">Social Media</a></p>
+        <p>&copy; 2025 Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
